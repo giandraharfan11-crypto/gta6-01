@@ -17,6 +17,19 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-game.ts';
 
+/*
+ * Neon Harbor: Vice Run — an original top-down open-world crime game set in the
+ * fictional sun-soaked city of Port Azura. The player explores on foot or steals
+ * any car, shoots, flees a five-star police wanted system with a busted meter,
+ * and works through Mama Rosa's six-job story chain (deliveries, a car theft, a
+ * rival takedown, a heat-survival run, a timed passenger fare and a bank heist),
+ * with a living city of traffic AI and pedestrians, a day-night cycle, a minimap
+ * HUD and fully procedural WebAudio sound. Plain Canvas 2D ES modules, no build
+ * step, no network requests, every asset generated from code.
+ */
+const GAME_TITLE = 'Neon Harbor: Vice Run';
+console.log('Packaging entry: ' + GAME_TITLE);
+
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
